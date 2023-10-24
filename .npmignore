@@ -1,0 +1,5 @@
+*.md
+.storybook/
+stories/
+test/
+.vscode/
