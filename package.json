@@ -4,12 +4,13 @@
         "type": "git",
         "url": "https://github.com/LiteObject/demo-react-component-library.git"
     },
-    "version": "0.0.2",
+    "version": "0.0.4",
     "description": "A demo react component library",
     "main": "dist/cjs/index.js",
     "module": "dist/esm/index.js",
     "files": [
-        "dist"
+        "dist",
+        "src"
     ],
     "scripts": {
         "build": "npm run build:esm && npm run build:cjs",
@@ -25,6 +26,7 @@
         "@types/react-dom": "^18.2.14",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
+        "source-map-loader": "^4.0.1",
         "typescript": "^5.2.2"
     },
     "peerDependencies": {

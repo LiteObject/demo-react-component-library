@@ -1,11 +1,13 @@
 import React from 'react';
 
 export interface IButtonProps extends React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
+    children: React.ReactNode;
     backgroundColor?: string;
     color?: string;
+    style?: string;
 }
 
-export const Button: React.FunctionComponent<IButtonProps> = (props) => {
+export const Button: React.FunctionComponent<IButtonProps> = (props: IButtonProps) => {
     const { children, backgroundColor, color, style } = props;
 
     let _style: React.CSSProperties = style || {};
